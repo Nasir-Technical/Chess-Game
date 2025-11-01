@@ -62,7 +62,5 @@ io.on("connection", function (uniquesocket) {
     })
 });
 
-const PORT = process.env.PORT || 3000;
-server.listen(PORT, "0.0.0.0", function () {
-    console.log(`listening on port ${PORT}`);
-});
+const PORT = process.env.PORT || 10000;
+server.listen(PORT, () => console.log(`Server running on ${PORT}`));
